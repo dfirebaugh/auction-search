@@ -12,6 +12,7 @@ You must update the `search.yml` file with your search parameters and slack hook
 pip install pyyaml
 pip install requests
 pip install beautifulsoup4
+pip install reportlab
 ```
 
 ## Build

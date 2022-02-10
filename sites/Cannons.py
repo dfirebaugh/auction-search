@@ -29,6 +29,7 @@ class CannonsAuction:
             if current_bid:
                 auction.set_current_bid(current_bid[-4:])
             links = child.find_all("a", {"class": "linkbutton"})
+            auction.set_images(child.find_all("img"))
             for link in links:
                 auction.lot_id = link.text.strip()
                 auction.link = self.base_url+link['href']

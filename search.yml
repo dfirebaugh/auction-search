@@ -1,3 +1,5 @@
+use_gui: true
+generate_pdf: true
 slack_hook: ""
 search_parameters:
   - search_term: drill press
