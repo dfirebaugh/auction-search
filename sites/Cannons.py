@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-from auction import Auction
+from auction.auction import Auction
 
 class CannonsAuction:
     def search(self, base_url, search_term):

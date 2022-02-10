@@ -13,3 +13,11 @@ pip install pyyaml
 pip install requests
 pip install beautifulsoup4
 ```
+
+## Build
+
+To build to an executable
+
+```sh
+python3.9.exe -m PyInstaller --onefile main.py
+```

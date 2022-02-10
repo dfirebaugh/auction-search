@@ -8,7 +8,7 @@ class Search:
         for auction in auctions:
             if auction.current_bid is None:
                 continue
-            if float(auction.current_bid) < self.price_upper_limit:
+            if float(auction.current_bid) < float(self.price_upper_limit):
                 filtered_auctions.append(auction)
 
         return filtered_auctions

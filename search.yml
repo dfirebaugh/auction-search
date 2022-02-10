@@ -1,6 +1,6 @@
-slack_hook: some_slack_web_hook
+slack_hook: ""
 search_parameters:
-  - search_term: drill
+  - search_term: drill press
     upper_limit: 3
   - search_term: bike
     upper_limit: 200
