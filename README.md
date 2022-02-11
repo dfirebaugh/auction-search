@@ -15,6 +15,7 @@ pip install beautifulsoup4
 pip install reportlab
 ```
 
+> note: on linux I had to run `sudo apt-get install python3-tk`
 ## Build
 
 To build to an executable

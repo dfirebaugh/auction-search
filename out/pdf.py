@@ -45,11 +45,12 @@ def generate_pdf(search_term="", upper_price_limit="", auctions=[]):
 
     styles = StyleSheet()
     link_style = ParagraphStyle(name="link-style", textColor="blue", fontSize=20, linkUnderline=True)
+    text_style = ParagraphStyle(name="link-style", textColor="black", fontSize=10)
 
     elements = []
     for auction in auctions:
         text = auction.html_text()
-        paragraph = Paragraph(text)
+        paragraph = Paragraph(text, style=text_style)
         elements.append(Paragraph(auction.link_html_text(), style=link_style))
         elements.append(paragraph)
         for image in auction.images:
